@@ -1,0 +1,7 @@
+type = last_world
+
+last_world {
+  is_server = false
+  world = C:/Users/Pojo2/AppData/Roaming/com.modrinth.theseus/profiles/1_23_24 2_03pm/saves/New World (2)
+}
+

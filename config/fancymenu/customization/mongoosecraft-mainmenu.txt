@@ -1,0 +1,227 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.class_442
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  orientation = mid-centered
+  x = 2
+  action = movebutton
+  y = 29
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  width = 98
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:modmenu_titlescreen_mods_button%
+  orientation = mid-centered
+  x = -100
+  action = movebutton
+  y = 52
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_accessibility_button%
+  orientation = mid-centered
+  x = 104
+  action = movebutton
+  y = 75
+}
+
+customization {
+  identifier = %id=376310%
+  orientation = mid-centered
+  x = -124
+  action = movebutton
+  y = 52
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  orientation = mid-centered
+  x = -100
+  action = movebutton
+  y = 29
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  width = 98
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  orientation = mid-centered
+  x = -100
+  action = movebutton
+  y = 75
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  orientation = mid-centered
+  x = 2
+  action = movebutton
+  y = 75
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  orientation = mid-centered
+  x = -124
+  action = movebutton
+  y = 75
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 2
+  width = 165
+  action = deep_customization_element:title_screen_branding
+  actionid = 7be27c9e-ef49-40d6-b2fc-c84dc857a82f1702665442356
+  y = 264
+  height = 10
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 359
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = 402711dd-6bfb-433b-b1e5-10b67f4bbdac1702665442368
+  y = 169
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 75
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = b113fc82-4fe3-4d59-a955-c96b078cf1c71702665442368
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = top-centered
+  splash_color = #ffff00
+  hidden = true
+  x = 70
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = e38fa52f-e3fb-4955-aa80-2028ce6fc6ed1702665442369
+  y = 77
+  height = 30
+}
+
+customization {
+  path = CustomResources/serverlogo2.png
+  orientation = top-centered
+  x = -132
+  width = 262
+  action = addtexture
+  actionid = 206c0e21-bf20-4d95-8799-0cc71f3071ef1702666258835
+  y = -4
+  height = 160
+}
+
+customization {
+  orientation = mid-centered
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = joinserver;mongoosecraft.mcserver.us%btnaction_splitter_fm%
+  x = -100
+  width = 200
+  action = addbutton
+  actionid = 59a9882d-d3b9-4cea-a083-8a7f7d5487d71702666534815
+  y = 6
+  label = Join MongooseCraft
+  height = 20
+}
+
+customization {
+  [loading_requirement:fancymenu_loading_requirement_is_server_online][requirement_mode:if][req_id:ab7ba0d4-9b51-4f9e-80b5-dc89df986e991702667278298] = mongoosecraft.mcserver.us
+  orientation = mid-centered
+  enable_scrolling = true
+  shadow = true
+  scale = 1.0
+  source = {"placeholder":"serverplayercount","values":{"ip":"someserver.com:25565"}} players online.
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = 106
+  width = 137
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = 2ed84809-81c2-446a-a21f-4e20dad172901702666890397
+  y = 10
+  alignment = left
+  base_color = #2ae024
+  height = 12
+}
+
+customization {
+  orientation = mid-centered
+  [loading_requirement:fancymenu_loading_requirement_is_server_online][requirement_mode:if_not][req_id:b7eba69e-5e11-4630-8c05-485015e5df171702667241056] = mongoosecraft.mcserver.us
+  enable_scrolling = true
+  shadow = true
+  scale = 1.0
+  source = Offline.
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = 106
+  width = 137
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = 438cd7ef-806b-4d05-9a89-7e0b9c7b23cd1702667187361
+  y = 10
+  alignment = left
+  base_color = #ff2652
+  height = 12
+}
+
+customization {
+  orientation = top-left
+  basecolor = #ffff00
+  shadow = true
+  splashfilepath = CustomResources/splashtext.txt
+  rotation = -20.0
+  scale = 1.0
+  refresh = true
+  bouncing = true
+  vanilla-like = false
+  x = 319
+  actionid = b21f54cc-ee74-450a-8d83-140d1b9ebeaf1702668129711
+  action = addsplash
+  y = 95
+}
+

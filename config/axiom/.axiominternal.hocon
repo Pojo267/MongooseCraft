@@ -1,0 +1,29 @@
+completedTutorials=[
+    introduction,
+    "box_select_tool",
+    selection,
+    "slope_tool",
+    "sculpt_draw_tool",
+    clentaminator,
+    "magic_select_tool"
+]
+customDowngradeSuggestions=[]
+globalScale=1
+lastTranslationCount=0
+openEditorWindowTypes=[
+    tools,
+    "tool_options",
+    palette,
+    "active_block",
+    history,
+    "world_properties",
+    clipboard,
+    "target_info",
+    "tool_masks"
+]
+rootEditorPalette {
+    blocks=[]
+}
+savedCustomTheme="ASel0AAAlJbUd1aURhcmsAAA=="
+showCloseWindowButton=false
+shownIntroduction=true
